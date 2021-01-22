@@ -138,7 +138,7 @@ table.hovertable {
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
-	width: 1400px;
+	width: 400px;
 }
 table.hovertable th {
 	background-color:#c3dde0;
@@ -195,7 +195,24 @@ function cen(){
 }  
 //页面大小发生变化时触发  
 window.onresize = cen;  
-window.onload = redirectPage;
+
+	function autoScale()
+	{
+    //移动端页面按手机屏幕分辨率自动缩放的js
+    var phoneWidth = parseInt(window.screen.width);
+    //缩放比例 = 手机屏幕宽/网页内容宽
+    var phoneScale = phoneWidth/1400;
+    if(phoneWidth<1400)
+    {
+        document.write('<meta name="viewport" content="width=device-width, initial-scale='+phoneScale+',minimum-scale='+phoneScale+',maximum-scale ='+phoneScale +',user-scalable=no,">');
+    }   
+	}
+
+window.onload = function()
+{
+	redirectPage()
+	autoScale();
+}
 // End -->
 </script>
 </head>
