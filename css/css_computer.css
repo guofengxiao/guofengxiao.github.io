@@ -1,0 +1,24 @@
+#firstParagraphTitle {
+	height: 40px;
+	width: 1400px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 36px;
+	display: block;
+}
+#firstWidth {
+	background-color: #70626A;
+	height: 5px;
+	width: 1400px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	display: block;
+}
